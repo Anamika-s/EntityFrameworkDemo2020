@@ -9,6 +9,11 @@ namespace WebApplication2.Models
 {
     public class StudentDBContext : DbContext
     {
+        public StudentDBContext()
+        {
+
+        }
+
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
 
